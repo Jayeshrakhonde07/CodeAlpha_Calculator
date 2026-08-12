@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: antiquewhite;
+}
+
+.Calculator {
+  background-color: rgb(63, 90, 99);
+  padding: 25px;
+  border-radius: 20px;
+  width: 100%;
+  max-width: 320px;
+}
+
+input {
+  width: 100%;
+  padding: 18px;
+  margin-bottom: 20px;
+  text-align: right;
+  font-size: 22px;
+  font-weight: bold;
+  background-color: rgb(58, 56, 56);
+  color: #f2f2f2;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+}
+
+.button {
+  width: 60px;
+  height: 60px;
+  margin: 6px;
+  font-size: 20px;
+  font-weight: bold;
+  border: none;
+  border-radius: 50%;
+  background-color: rgb(52, 47, 47);
+  color: #f2f2f2;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.button:hover {
+  background-color: #444;
+}
+
+.button:active {
+  transform: scale(0.95);
+}
+
+.equalto {
+  background-color: rgb(255, 139, 0);
+}
+
+.equalto:hover {
+  background-color: rgb(230, 120, 0);
+}
+
+
+
+/*
+==============================
+       Media Queries
+==============================
+*/
+
+/* For Mobile View */
+@media (max-width: 575px) {
+  .Calculator {
+    max-width: 280px;
+    padding: 20px;
+  }
+
+  .button {
+    width: 52px;
+    height: 52px;
+    font-size: 18px;
+    margin: 4px;
+  }
+
+  input {
+    font-size: 20px;
+    padding: 15px;
+  }
+}
+
+/* For Medium Device - Tablet */
+@media (min-width: 576px) and (max-width: 991px) {
+  .Calculator {
+    max-width: 360px;
+  }
+
+  .button {
+    width: 65px;
+    height: 65px;
+    font-size: 22px;
+  }
+
+  input {
+    font-size: 24px;
+  }
+}
+
+/* For large Device Laptop & Desktop  */
+@media (min-width: 992px) {
+  .Calculator {
+    max-width: 380px;
+  }
+
+  .button {
+    width: 70px;
+    height: 70px;
+    font-size: 24px;
+  }
+
+  input {
+    font-size: 26px;
+  }
+}
